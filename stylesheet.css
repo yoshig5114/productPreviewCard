@@ -1,0 +1,50 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+#card{
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+#heading{
+    font-family: 'Fraunces', serif;
+}
+#container{
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+h3{
+    letter-spacing:  6px;
+    text-transform: uppercase;
+    color: var(--darkGrayBlue);
+}
+#textDescription{
+    color: var(--darkGrayBlue;
+}
+#priceContainer{
+    display: flex;
+    align-items: center;
+}
+#newPrice{
+    font-size: x-large;
+    color: var(--darkCyan);
+}
+#oldPrice{
+    text-decoration: line-through;
+    padding-left: 30px;
+    color: var(--darkGrayBlue);
+}
+#productInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
