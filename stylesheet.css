@@ -1,13 +1,54 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media screen and (max-width: 375px){
+    #card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #productImage{
+        height: 250px;
+        width: 350px;
+        padding-top: 4px;
+        content: url(./images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+    #productInfo{
+        border-radius: 0 0 10px 10px;
+        height: 400px;
+    }
+    #heading{
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #textDescription{
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+}
+
+:root{
+    --dark-gray-blue: hsl(228, 12%, 48%);
+}
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+}
+
 @import url(https://fonts.google.com/specimen/Montserrat);
 @import url(https://fonts.google.com/specimen/Fraunces);
 
 #card{
     display: flex;
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 625px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 10px 0 0 10px;
 }
 #heading{
     font-family: 'Fraunces', serif;
@@ -19,15 +60,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+#productImage{
+    height: 512px;
+    width: 338px;
     border-radius: 10px 0 0 10px;
 }
 h3{
     letter-spacing:  6px;
     text-transform: uppercase;
-    color: var(--darkGrayBlue);
+    color: var(--dark-gray-blue);
 }
 #textDescription{
-    color: var(--darkGrayBlue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 510px;
+    width: 300px;
+    color: var(--dark-gray-blue);
 }
 #priceContainer{
     display: flex;
@@ -35,16 +86,19 @@ h3{
 }
 #newPrice{
     font-size: x-large;
-    color: var(--darkCyan);
+    color: var(--dark-cyan);
 }
 #oldPrice{
     text-decoration: line-through;
     padding-left: 30px;
-    color: var(--darkGrayBlue);
+    color: var(--dark-gray-blue);
 }
 #productInfo{
     display: flex;
     flex-direction: column;
     padding-left: 3rem;
     font-family: 'Montserrat', sans-serif;
+}
+#cartButton{
+    padding: 15px;
 }
