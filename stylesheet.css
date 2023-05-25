@@ -3,37 +3,7 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width: 375px){
-    #card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #productImage{
-        height: 250px;
-        width: 350px;
-        padding-top: 4px;
-        content: url('./images/image-product-mobile.jpg');
-        border-radius: 10px 10px 0 0;
-    }
-    #productInfo{
-        border-radius: 0 0 10px 10px;
-        height: 400px;
-    }
-    #heading{
-        line-height: 30px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-    #textDescription{
-        line-height: 23px;
-        margin-bottom: 20px;
-        /*font-size: 14px;*/
-    }
-    h3{margin-top: 0;}
 
-}
 
 :root{
     --dark-gray-blue: hsl(228, 12%, 48%);
@@ -52,6 +22,9 @@ body{
     justify-content: center;
 }
 #heading{
+    margin-top: 15px;
+    margin-bottom: 18px;
+    margin-right: 5px;
     font-weight: 700;
     font-family: 'Fraunces', serif;
 }
@@ -62,12 +35,14 @@ body{
     height: 100vh;
 }
 #productImage{
-    height: 450px;
+    height: 400px;
     width: 300px;
     padding-top: 4px;
     border-radius: 10px 0 0 10px;
 }
-h3{
+h5{
+    margin-top: 15px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: var(--dark-gray-blue);
 }
@@ -76,8 +51,8 @@ h3{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    height: 450px;
-    width: 300px;
+    height: 400px;
+    width: 250px;
     padding-left: 30px;
     padding-right: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -85,8 +60,9 @@ h3{
     border-radius: 0, 10px, 10px, 0;
 }
 #textDescription{
-    line-height: 27px;
+    line-height: 17px;
     margin-top: 5px;
+    margin-right: 5px;
     color: var(--dark-gray-blue);
     font-size: 14px;
 }
@@ -110,8 +86,45 @@ h3{
 
 #cartButton{
     background-color: var(--dark-cyan);
-    padding: 15px 18px;
+    padding: 12px 15px;
     border: none;
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
+}
+@media (max-width: 375px){
+    #container{
+        justify-content: flex-start;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    #card{
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    #productImage{
+        height: 220px;
+        width: 100%;
+        padding-top: 6px;
+        content: url('./images/image-product-mobile.jpg');
+        border-radius: 10px 10px 0 0;
+    }
+    #productInfo{
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+    #heading{
+        font-size: 28px;
+        ;
+    }
+    #textDescription{
+        line-height: 23px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        margin-right: 19px;
+    }
+    h5{margin-top: 0;}
 }
