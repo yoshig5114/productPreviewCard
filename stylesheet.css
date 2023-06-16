@@ -37,11 +37,11 @@ body{
 #productImage{
     height: 400px;
     width: 300px;
-    padding-top: 4px;
+    padding-top: 2px;
     border-radius: 10px 0 0 10px;
 }
 h5{
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: var(--dark-gray-blue);
@@ -51,10 +51,11 @@ h5{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    height: 400px;
+    height: 390px;
     width: 250px;
     padding-left: 30px;
     padding-right: 20px;
+    padding-bottom: 8px;
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0, 10px, 10px, 0;
@@ -112,7 +113,7 @@ h5{
     }
     #productInfo{
         height: auto;
-        width: 100%;
+        width: 86%;
         padding: 20px;
         border-radius: 0 0 10px 10px;
     }
